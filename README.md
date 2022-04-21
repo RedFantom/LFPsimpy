@@ -28,15 +28,20 @@ If you cannot run any of these commands, it indicates that there is something am
 
 Installation depends on how you installed NEURON simulator (installed vs. compiled). 
 
-## If you installed a downloaded NEURON package
-Download and extract [this LFPsimpy ZIP file](https://github.com/JustasB/LFPsimpy/archive/master.zip) to a known folder. Then note the location of the `LFPsimpy` sub-folder.
+## With pip & git
+`git` must be installed and available on the PATH, independent of operating system.
+```
+python -m pip install git+github.com/JustasB/LFPsimpy
+```
 
-Then append the `LFPsimpy` parent folder location to your `$PYTHONPATH` environmental variable. E.g. `export PYTHONPATH=$PYTHONPATH:/path/to/LFPsimpy-master/`. Place the line in your shell startup file (e.g. `~/.bashrc`) to ensure the variable remains set after an OS restart.
+## With pip from a ZIP
+Download the latest code using [this link](https://github.com/JustasB/LFPsimpy/archive/refs/heads/master.zip) directly from GitHub. Install with
+```
+python -m pip install master.zip
+```
 
 ## If you compiled NEURON+Python
-
 To install the library, simply type in `pip install lfpsimpy` in your terminal.
-
 
 # Usage
 
